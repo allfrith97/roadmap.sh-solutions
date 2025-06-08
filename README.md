@@ -3,3 +3,4 @@ This repository contains front-end projects built following the roadmap.sh front
 
 - [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)
 - [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
+- [Changelog Components](https://roadmap.sh/projects/changelog-component)
