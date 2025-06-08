@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: #009578;
+
+}
+
+.timeline{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Monica",Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.timeline-component{
+    margin: 0px 20px 20px 20px;
+    
+}
+
+.timeline-component-bg{
+    padding: .5rem;
+    background: rgba(255,255,255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.timeline-date{
+    text-align: right;
+}
+
+.timeline-middle{
+    position: relative;
+    background-color: #fff;
+}
+
+.timeline-point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.timeline-paragraph{
+    line-height: 1.2;
+}
+
+.button-more{
+    margin: 0 auto;
+    max-width: 750px;
+
+}
+
+.button-more button{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: "Monica",Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FCB454;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1em;
+}
