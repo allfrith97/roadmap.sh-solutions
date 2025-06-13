@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #435334;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span,p{
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor-calendario{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contenedor-busquedaFecha{
+    width: 350px;
+    display: flex;
+    border: 2px solid #000;
+}
+
+.busqueda-fecha{
+    flex: 4;
+}
+
+.busqueda-fecha input{
+    background-color: #FAF1E4;
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.busqueda-fecha input::placeholder{
+    font-size: 20px;
+    color: #9EB384;
+}
+
+
+.boton-calendario{
+    flex:1;
+    background-color:#9EB384;
+    cursor: progress;
+}
+
+/*Inicia estilos para contenedor de meses*/
+.contenedor-fechas{
+    width: 350px;
+    background-color: #9EB384;
+   
+}
+
+.contenedor-fechas .meses{
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 40px;
+    padding-bottom: 1rem;
+}
+
+.contenedor-fechas .meses .desplazamiento{
+    border: none;
+    background-color: #9EB384;
+     cursor: pointer;
+}
+.contenedor-fechas .meses p{
+    text-align: center;
+    align-self: center;
+    color: #000;
+}
+
+.contenedor-fechas .contenedor-semanas{
+    display: flex;
+}
+
+.contenedor-semanas .semanas{
+    flex: 1;
+    text-align: center;
+}
+
+.dias{
+    display: grid;
+    grid-template-columns:repeat(7,50px);
+    grid-template-rows: repeat(5,50px);
+    
+    
+}
+
+.dias span{
+    height: 50px;
+    width: 50px;
+    align-content: center;
+    scale: .9;
+    cursor: pointer;
+    
+}
+
+.dias span:first-child{
+    grid-column-start: 5;
+}
+
+.dias span:hover{
+    border-radius: 100%;
+    background-color: #435334;
+    scale: 1.1;
+    transition: border-radius .5s linear 0s,
+                scale 1s ease-in-out 0s;
+}
