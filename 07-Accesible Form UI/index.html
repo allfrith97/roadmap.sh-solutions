@@ -20,10 +20,10 @@
                 </datalist>
                 <!--Inicia campo de entrada-->
                 <label for="nombre">Nombre Usuario</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" spellcheck="true" minlength="4" maxlength="15" tabindex="1" autofocus list="nombres-usuario" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" spellcheck="true" minlength="4" maxlength="15" tabindex="1" autofocus list="nombres-usuario" required aria-required="true">
                 <!--Inicia campo de entrada-->
                 <label for="email">Email</label>
-                <input type="email" name="email-usuario" id="email" placeholder="Correo electronico" tabindex="3" required >
+                <input type="email" name="email-usuario" id="email" placeholder="Correo electronico" tabindex="3" required aria-required="true">
                  
             </fieldset>
 
@@ -33,18 +33,23 @@
                 <legend>Privacidad</legend>
                 <!--Inicia campo de entrada-->
                 <label for="pass">Enter Password</label>
-                <input type="password" name="pass" id="pass" placeholder="********" tabindex="2" minlength="8" required>
+                <input type="password" name="pass" id="pass" placeholder="********" tabindex="2" minlength="8" required aria-required="true">
                 <!--Inicia campo de entrada-->
                 <label for="pass2">Confirm Password</label>
-                <input type="password" name="pass2" id="pass2" placeholder="********" tabindex="4" minlength="8" required>
+                <input type="password" name="pass2" id="pass2" placeholder="********" tabindex="4" minlength="8" required aria-required="true">
 
             </fieldset>
           
-            <button type="submit" class="boton-enviar">Enviar Formulario</button>
+            <button type="submit" class="boton-enviar" aria-label="Enviar consulta">Enviar Formulario</button>
            
         </form>
         <div class="izquierda">
-            <progress value="75" max="100">75%</progress>
+            <div class="container">
+                <div class="progress">
+                    <h3>75<span>%</span></h3>
+                    <h4>Completado</h4>
+                </div>
+            </div>
             <hr>
             <ul class="lista">
                 <li class="item-lista item-completado">Create Account</li>
