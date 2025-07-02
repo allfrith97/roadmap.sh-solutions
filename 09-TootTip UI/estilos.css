@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +6,167 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-     background: -webkit-linear-gradient(left, #0f3443 0%,#34e69f 100%);
+    font-family: "Poppins",Arial, sans-serif;   
+    
+    background: linear-gradient(90deg, #274427,#64a34d);
+        
 }
-
 .barraNavegacion {
     width: 100%;
-    height: 40px;
-    background-color: #F0F2BD;
+    height: 55px;
+    padding:0 1rem; 
+    background-color: #F4EBD3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 55px;
+    place-items: center;
+    box-shadow: 0px 2px 13px #000;
+    z-index: -1;
+}
+
+.contenedorLogo{
+    width: 100%;
+    padding: .5rem 1rem;
+    height: 55px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #000;
+    text-decoration: none;
+
+}
+.logo img{
+    width: 40px;
+}
+.logo>span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.navegacion{
+    
+    padding: .5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    gap: 1rem;
 }
+
+.btn {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #000;
+    font-size: 15px;
+    padding: .5rem 0;
+    padding-left: 12px;
+    padding-right: 16px;
+    position: relative;
+
+
+}
+
+.btn::before{
+    width: 100px;
+    height: 16px;
+    background-color: rgb(233, 201, 141);
+    color: #111;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    text-wrap: nowrap;
+    content: "";
+    z-index: 2;
+    position: absolute ;
+    bottom: -32px;
+    left: 60px;
+    visibility:hidden;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.btn::after{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 70px;
+    z-index: 1;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgb(233, 201, 141);
+    visibility: hidden;
+    opacity: 0.3;
+
+  
+}
+.btn:hover::before{
+
+}
+.btn:hover::before,
+.btn:hover::after{
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in-out 1s;
+}
+
+.btn:nth-child(1)::before{
+    content: "Sección Inicio";
+}
+.btn:nth-child(2)::before{
+    content: "Blog para aprender";
+}
+.btn:nth-child(3)::before{
+    content: "Proyectos realizados";
+}
+.btn:nth-child(4)::before{
+    content: "Sección Contacto";
+}
+
+
+
+
+
+.btn:hover{
+    border-bottom: 2px solid #000;
+    font-weight: 700;
+    
+}
+
+.contenedor-busqueda{
+   width: 150px;
+   position: relative;
+   
+}
+
+#busqueda{
+    width: 150px;
+    border-radius: 5px;
+    border: .5px solid rgba(255, 255, 255, 0.2);
+    height: 25px;
+    padding: .5rem;
+    padding-left: 28px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    &::placeholder{
+        font-size: 12px;
+        font-family: "Poppins",Arial, sans-serif;
+    }
+}
+
+.icono-busqueda{
+    width: 18px;
+    position: absolute;
+    top: 4.5px;
+    left: 8px;
+
+}
+
