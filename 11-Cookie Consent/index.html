@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent</title>
+    <link rel="stylesheet" href="estiloCookie.css">
+    <script src="cookie.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="cookieConsent" id="cookieConsent">
+            <div class="informacionCookies">
+                <h2>Aviso de Cookies</h2>
+                <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso.</p>
+                <p>Puede cambiar la configuración u obtener más información aquí: <a href="#">Política de Cookies</a></p>
+            </div>
+      
+            <div class="contenedorBotonesCookies">
+                <button type="button" class="btn" onclick="aceptarCookies()">Aceptar Cookies</button>
+                <button type="button" class="btn boton" id="boton">Más Info...</button>
+                <dialog class="ventanaModal" id="ventanaModal">
+                    <h3>Más info...</h3>
+                    <p>Este sitio utiliza cookies esenciales para funcionar correctamente. Si no las aceptas, es posible que no puedas navegar ni usar algunas funciones.</p><br>
+                    <button type="button" class="btnModal" id="cerrarModal">Cerrar</button>
+                </dialog>
+            </div>
+    </div>
+    </main>
+</body>
+</html>

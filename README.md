@@ -10,3 +10,4 @@ This repository contains front-end projects built following the roadmap.sh front
 - [Image Grid Layout](https://roadmap.sh/projects/image-grid)
 - [ToolTip UI](https://roadmap.sh/projects/tooltip-ui)
 - [Tabs](https://roadmap.sh/projects/simple-tabs)
+- [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
