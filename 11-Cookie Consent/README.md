@@ -10,7 +10,7 @@ Muchos sitios web muestran una ventana emergente de consentimiento de cookies pa
 </figure>
 Puntos extra si mantiene el consentimiento del usuario mediante cookies o almacenamiento local y evita que la ventana emergente aparezca en visitas posteriores.
 
-# Solución
+## Solución
 <figure>
     <img src="cookieHtml.png" alt="Texto alternativo" />
     <figcaption style="text-align:center;">Figura 2. Implementación realizada</figcaption>
@@ -21,6 +21,11 @@ Puntos extra si mantiene el consentimiento del usuario mediante cookies o almace
     <img src="modal.png" alt="Texto alternativo" />
     <figcaption style="text-align:center;">Figura 2. Implementación realizada</figcaption>
 </figure>
+
+
+## Anexos
+
+- Se implemento el uso de las cookies para validar el consentimiento del usuario, si el usuario acepta las cookies el modal deja de mostrarse y aunque actualices el sistema validaa que se cuente en la cookie la propiedad consentimiento=aceptado, este se consiguue al aceptar las cookies, ademas se implemento que el modal aparezca 5 segundos despues de empezar a navegar en la apagina
 
 https://roadmap.sh/projects/cookie-consent
 
